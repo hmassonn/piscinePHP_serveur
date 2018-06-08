@@ -1,5 +1,11 @@
 Bonjour petit Padawan, si tu lis ceci c'est que tu fais surement le rush00 de la piscine PHP, ce script docker va te permettre d'avoir un serveur apache (pour pouvoir faire tourner ton Php ;)) et un serveur mysql (parce que c'est mieux que les CSV ;)) avec phpmyadmin parcequ'on est gentils.
 
+pour commencer il te faut brew 
+`zsh -c "$(curl -fsSL https://raw.github.com/kube/42homebrew/master/install.sh)" && zsh`
+ainsi que docker et docker machine
+`brew install docker`
+`brew install docker-machine`
+
 pour te connecter sur ton site tu commences par mettre ton travail (ou un hello world en php pour tester) dans `/Users/ton-login-evidemment-si-tu-met-ca-t'aura-une-erreur/http`
 
 ```sh install.sh```
