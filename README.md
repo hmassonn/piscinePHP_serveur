@@ -16,4 +16,4 @@ et si tu veux arreter le serveur tu fait
 
 si tu te deconnecte et que ca te met une erreure genre `Error checking TLS connection: Host is not running` tu fait 
 
-```docker-machine --storage-path /goinfre start hmclwd``` 
+```docker-machine --storage-path /goinfre start hmclwd && docker restart lamp``` 
