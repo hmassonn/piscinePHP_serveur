@@ -8,7 +8,7 @@ ainsi que docker et docker machine
 
 pour te connecter sur ton site tu commences par mettre ton travail (ou un hello world en php pour tester) dans `/Users/ton-login-evidemment-si-tu-met-ca-t'aura-une-erreur/http`
 
-```sh install.sh```
+```curl https://raw.githubusercontent.com/olag18/piscinePHP_serveur/master/install.sh | sh```
 
 et quand le serveur tourne (les lignes arrêtent de s'afficher tu devrais facilement repérer le truc) dans un nouveau shell tu lances
 
