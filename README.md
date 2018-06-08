@@ -9,3 +9,7 @@ et quand le serveur tourne (les lignes arrêtent de s'afficher tu devrais facile
 ```docker-machine --storage-path "/goinfre" ip hmclwd```
 
 ce qui te donne l'ip avec laquel voir ton site, donc si dans une URL tu met `http://mon-ip-en-chiffre-pas-ca-c'est-juste-un-exemple/phpmyadmin`
+
+et si tu veux arreter le serveur tu fait 
+
+```eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker stop lamp```
