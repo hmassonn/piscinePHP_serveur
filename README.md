@@ -10,6 +10,9 @@ et quand le serveur tourne (les lignes arrêtent de s'afficher tu devrais facile
 
 ce qui te donne l'ip avec laquel voir ton site, donc si dans une URL tu met `http://mon-ip-en-chiffre-pas-ca-c'est-juste-un-exemple/phpmyadmin`
 
+`login: root2`
+`password: root`
+
 et si tu veux arreter le serveur tu fait 
 
 ```eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker stop lamp```
