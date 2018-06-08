@@ -13,3 +13,7 @@ ce qui te donne l'ip avec laquel voir ton site, donc si dans une URL tu met `htt
 et si tu veux arreter le serveur tu fait 
 
 ```eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker stop lamp```
+
+si tu te deconnecte et que ca te met une erreure genre `Error checking TLS connection: Host is not running` tu fait 
+
+```docker-machine --storage-path /goinfre start hmclwd``` 
