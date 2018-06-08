@@ -6,7 +6,7 @@ pour te connecter sur ton site tu commences par mettre ton travail (ou un hello 
 
 et quand le serveur tourne (les lignes arrêtent de s'afficher tu devrais facilement repérer le truc) dans un nouveau shell tu lances
 
-```docker exec -i lamp mysql -uroot <<< "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'root'; GRANT ALL PRIVILEGES ON * . * TO 'root2'@'localhost'; create database rush00;" && docker-machine --storage-path "/goinfre" ip hmclwd```
+```eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker exec -i lamp mysql -uroot <<< "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'root'; GRANT ALL PRIVILEGES ON * . * TO 'root2'@'localhost'; create database rush00;" && docker-machine --storage-path "/goinfre" ip hmclwd```
 
 ce qui te donne l'ip avec laquel voir ton site, donc si dans une URL tu met `http://mon-ip-en-chiffre-pas-ca-c'est-juste-un-exemple/phpmyadmin`
 
