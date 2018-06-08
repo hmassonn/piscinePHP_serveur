@@ -2,11 +2,11 @@ Bonjour petit Padawan, si tu lis ceci c'est que tu fais surement le rush00 de la
 
 pour te connecter sur ton site tu commences par mettre ton travail (ou un hello world en php pour tester) dans `/Users/ton-login-evidemment-si-tu-met-ca-t'aura-une-erreur/http`
 
-```sh install.sh && docker exec -i lamp mysql -uroot <<< "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'root'; GRANT ALL PRIVILEGES ON * . * TO 'root2'@'localhost'; create database rush00;"```
+```sh install.sh```
 
 et quand le serveur tourne (les lignes arrêtent de s'afficher tu devrais facilement repérer le truc) dans un nouveau shell tu lances
 
-```docker-machine --storage-path "/goinfre" ip hmclwd```
+```docker exec -i lamp mysql -uroot <<< "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'root'; GRANT ALL PRIVILEGES ON * . * TO 'root2'@'localhost'; create database rush00;" && docker-machine --storage-path "/goinfre" ip hmclwd```
 
 ce qui te donne l'ip avec laquel voir ton site, donc si dans une URL tu met `http://mon-ip-en-chiffre-pas-ca-c'est-juste-un-exemple/phpmyadmin`
 
