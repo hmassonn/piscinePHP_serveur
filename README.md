@@ -17,4 +17,8 @@ et si tu veux arreter le serveur tu fait
 
 ```eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker stop lamp```
 
-si tu te deconnecte et que ca te met une erreure genre `Error checking TLS connection: Host is not running` tu recommence depuis le debut
+si tu te deconnecte et que ca te met une erreure genre `Error checking TLS connection: Host is not running` tu peux essayer
+
+`eval "$(docker-machine --storage-path "/goinfre" env hmclwd)" && docker restart lamp`
+
+sinon recommence depuis le debut
